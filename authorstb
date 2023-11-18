@@ -1,0 +1,14 @@
+-- SQL Query to create database and table
+CREATE DATABASE IF NOT EXISTS authordb;
+
+USE authordb;
+
+CREATE TABLE IF NOT EXISTS authorstb (
+    AuthorId INT AUTO_INCREMENT PRIMARY KEY,
+    AuthorFullName VARCHAR(255) NOT NULL,
+    AuthorEmail VARCHAR(255) NOT NULL,
+    AuthorAddress VARCHAR(255) NOT NULL,
+    AuthorBiography TEXT,
+    AuthorDateOfBirth DATE,
+    AuthorSuspended BOOLEAN
+);
